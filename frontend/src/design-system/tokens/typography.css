@@ -1,0 +1,29 @@
+:root{
+--font-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+--font-hand:"Caveat","Segoe Script",cursive;
+/* Everything in the brand is mono. --font-body is an alias, not a second family. */
+--font-body:var(--font-mono);--font-display:var(--font-mono);
+
+--size-display:30px;--size-h1:22px;--size-h2:17px;--size-h3:15px;
+--size-body:14px;--size-small:13px;--size-label:11px;--size-micro:10px;
+--size-metric:30px;--size-metric-lg:42px;--size-hand:19px;
+
+--lh-tight:1.15; /* @kind font */
+--lh-snug:1.35; /* @kind font */
+--lh-body:1.6; /* @kind font */
+--lh-loose:1.8; /* @kind font */
+
+--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+
+/* Overline labels ("DATASET PROFILE // VISUAL SCHEMATIC") are the brand's signature. */
+--track-label:0.12em; /* @kind font */
+--track-micro:0.16em; /* @kind font */
+--track-normal:0; /* @kind font */
+--track-tight:-0.01em; /* @kind font */
+
+--text-label:var(--weight-semibold) var(--size-label)/1.2 var(--font-mono);
+--text-heading:var(--weight-bold) var(--size-h1)/var(--lh-tight) var(--font-mono);
+--text-default:var(--weight-regular) var(--size-body)/var(--lh-body) var(--font-mono);
+--text-metric:var(--weight-bold) var(--size-metric)/1 var(--font-mono);
+--text-annotation:var(--weight-400) var(--size-hand)/1.3 var(--font-hand);
+}

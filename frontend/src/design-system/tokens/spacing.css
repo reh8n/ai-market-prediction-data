@@ -1,0 +1,13 @@
+:root{
+/* 4px base. The reference UI uses generous panel padding (24px) and tight text runs. */
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;
+--space-6:24px;--space-8:32px;--space-10:40px;--space-12:48px;--space-16:64px;
+
+--panel-pad:24px;--panel-pad-tight:16px;--panel-gap:20px;--page-pad:28px;
+--control-pad-x:14px;--control-pad-y:9px;--stack-gap:12px;--label-gap:6px;
+
+--control-h-sm:30px;--control-h:38px;--control-h-lg:46px;
+--grid-cell:24px; /* blueprint background pitch */
+--rail-w:3px;     /* left accent rail on quoted/AI blocks */
+--max-prose:66ch;
+}

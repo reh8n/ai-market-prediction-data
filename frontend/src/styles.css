@@ -1,0 +1,75 @@
+/* Design tokens first, then the small amount of global styling the app adds.
+   Component styling lives in the design-system components, not here. */
+@import "./design-system/styles.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-page);
+  color: var(--text-body);
+  font: var(--text-default);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-link-hover);
+}
+
+/* Sunken pressed-paper block for transcripts and extraction JSON. */
+pre.code {
+  margin: 0;
+  padding: var(--space-4);
+  background: var(--surface-sunken);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-inset);
+  font-family: var(--font-mono);
+  font-size: var(--size-small);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 460px;
+  overflow: auto;
+}
+
+/* The two-column panel split the brand uses throughout. */
+.split {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: var(--panel-gap);
+  align-items: start;
+}
+
+.split-even {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--panel-gap);
+  align-items: start;
+}
+
+.stack {
+  display: grid;
+  gap: var(--panel-gap);
+}
+
+@media (max-width: 1000px) {
+  .split,
+  .split-even {
+    grid-template-columns: 1fr;
+  }
+}

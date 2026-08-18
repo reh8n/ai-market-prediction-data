@@ -1,0 +1,16 @@
+# Normalise line endings so a Windows clone does not rewrite every file.
+# Without this, Git checks text files out as CRLF on Windows, which shows up
+# as a whole-file diff on the next commit and breaks anything read literally.
+* text=auto eol=lf
+
+# Binary — never touch these.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+*.woff binary
+*.woff2 binary
+*.db binary
+*.jsonl binary

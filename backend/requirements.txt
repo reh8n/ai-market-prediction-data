@@ -1,0 +1,27 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+sqlalchemy==2.0.36
+pydantic==2.10.4
+pydantic-settings==2.7.0
+python-dotenv==1.0.1
+httpx==0.28.1
+
+# YouTube ingestion
+# 1.x has a different API surface than 0.6.x - do not downgrade
+youtube-transcript-api>=1.2.4
+yt-dlp>=2025.1.1
+
+# Postgres driver (only needed when DATABASE_URL points at Postgres)
+psycopg2-binary==2.9.10
+
+# Optional: Whisper fallback for videos without captions.
+# Install separately - large download:
+#   pip install faster-whisper==1.1.0
+
+# Market data. yfinance wraps unofficial Yahoo endpoints (no key, can break);
+# SEC EDGAR is hit directly with httpx (no key, official).
+yfinance>=0.2.50
+
+# Analyst chat + extraction can use any OpenAI-compatible endpoint
+# (OpenAI, Groq, OpenRouter, Together, DeepSeek, Mistral, local servers).
+openai>=1.0
